@@ -20,8 +20,8 @@ img {
     border: 2px solid black;
     border-radius: 10px;
     height: 40%;
-    width: 60%;
-    margin: 0px 20% 60px;
+    width: 70%;
+    margin: 0px 17% 60px;
 }
 
 h2 {
@@ -40,4 +40,13 @@ h3 {
 
 p{
     font-size: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: blue;
 }
