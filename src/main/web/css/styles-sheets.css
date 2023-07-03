@@ -2,6 +2,7 @@
 aside {
     float: left;
     height: 4600px;
+    width: 230px;
     background-color: gray;
     padding-right: 20px;
     border-radius: 10px;
@@ -10,7 +11,7 @@ aside {
 
 section {
     background-color: gray;
-    margin-left: 245px;
+    margin-left: 260px;
     padding: 30px;
     border-radius: 10px;
     border: 2px solid black;
@@ -19,8 +20,8 @@ section {
 img {
     border: 2px solid black;
     border-radius: 10px;
-    height: 40%;
-    width: 70%;
+    height: 400px;
+    width: 650px;
     margin: 0px 17% 60px;
 }
 
@@ -46,7 +47,27 @@ li {
     margin-bottom: 10px;
 }
 
+nav {
+    background-color: green;
+    text-align: right;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+nav a {
+    margin: 10px;
+    background-color: black;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
 a:link, a:visited, a:active {
     text-decoration:none;
     color: blue;
+}
+
+footer{
+    clear: left;
 }

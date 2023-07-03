@@ -6,19 +6,28 @@
     <link rel="stylesheet" href="../../css/styles-sheets.css">
 </head>
 <body>
-<h3>HTML</h3>
+<header>
+    <nav>
+        <a href="../../index.html">Inicio</a>
+        <a href="../html/html.html">HTML</a>
+        <a href="../css/css.html">CSS</a>
+        <a href="../javascript/javascript.html">Java Script</a>
+    </nav>
+</header>
 <aside id="barraNavegacion">
-    <h3>Contenido</h3>
+    <h3>CSS</h3>
     <ol>
         <li><a href="#conceptosBasicos">Conceptos básicos.</a></li>
         <li><a href="#estuctura">Estructura.</a></li>
         <li><a href="#tipoSelector">Tipo selector.</a></li>
-        <li><a href="#etiquetaFloat">Etiqueta Float y Display.</a></li>
-        <li><a href="#marginPadding">Etiqueta Margin y Padding.</a></li>
-        <li><a href="#border">Etiqueta Border.</a></li>
+        <li><a href="#etiquetaFloat">Propiedad Float y Display.</a></li>
+        <li><a href="#clear">Propiedad clear.</a></li>
+        <li><a href="#marginPadding">Propiedad Margin y Padding.</a></li>
+        <li><a href="#border">Propiedad Border.</a></li>
     </ol>
 </aside>
 <section>
+    <button><a href="../../index.html">Inicio</a></button>
     <h2 id="conceptosBasicos">Conceptos Básicos</h2>
     <p>Es un estandar para dotar de apariencia una páginca WEB, Se puede incluir através de una hoja con extensión
        .css, en el header o directamente sobre una etiqueta.</p>
@@ -41,6 +50,11 @@
         clear: both.</p>
     <img src="../../../resources/css/Imagen4.PNG">
 
+    <h2 id="clear">Clear:</h2>
+    <p>Lleva al flujo normal al elemento que lo precede si se ha aplicado la etiqueta float y no se ubica al su lado como
+        se esperaria, agregando nuevamente el comportamiento de block a la etiqueta.</p>
+    <img src="../../../resources/css/Imagen7.PNG">
+
     <h2 id="marginPadding">Margin y padding:</h2>
     <p>El atributo Margin ajusta el margen desde el contenedor hasta el siguiente elemento y padding ajusta la distancia
         entre los elementos que tiene el contenedor y el borde del mismo. Se pueden indicar cuatro valores uno para
@@ -51,9 +65,10 @@
     <p>Se utiliza para dar colocar el borde al contenedor y con radius para colocar el radio en las esquinas donde
         se encuentran los bordes.</p>
     <img src="../../../resources/css/Imagen6.PNG">
+
 </section>
 </body>
 <footer>
-    <button><a href="../../index.html">Inicio</a></button>
+    Fin de la página.
 </footer>
 </html>
