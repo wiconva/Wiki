@@ -1,0 +1,43 @@
+@charset  "utf-8";
+aside {
+    float: left;
+    height: 4600px;
+    background-color: gray;
+    padding-right: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+section {
+    background-color: gray;
+    margin-left: 245px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+img {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 40%;
+    width: 60%;
+    margin: 0px 20% 60px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    background-color : green;
+    margin: 10px auto;
+    padding: 10px;
+    width: 40%;
+    text-align:center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+p{
+    font-size: 20px;
+}
