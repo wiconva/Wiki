@@ -1,16 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Java Script</title>
-</head>
-<body>
-    <h3>Java Script</h3>
-    <ol>
-        <li><a>Conceptos básicos</a></li>
-    </ol>
-</body>
-<footer>
-    <button><a href="../../index.html">Inicio</a></button>
-</footer>
+<html lang="Esp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Java Scritp</title>
+        <link rel="stylesheet" href="../../css/styles-sheets.css">
+        <script src="../../javascript/mijavascript.js"></script>
+    </head>
+
+    <body>
+        <header id="header">
+            <nav>
+                <a href="../../index.html">Inicio</a>
+                <a href="../html/html.html">HTML</a>
+                <a href="../css/css.html">CSS</a>
+                <a href="../javascript/javascript.html">Java Script</a>
+            </nav>
+        </header>
+
+        <aside id="aside">
+            <h3>Java Script</h3>
+            <ol>
+                <li><a href="#conceptosBasicos">Conceptos básicos.</a></li>
+                <li><a href="#alert">Función Alert.</a></li>
+                <li><a href="#enlazarArchivoJS">Enlazar archivos JS.</a></li>
+                <li><a href="#tiposDatos">Tipos de datos.</a></li>
+                <li><a href="#nombreVariable">Nombrado de variables.</a></li>
+                <li><a href="#iniciandoVarables">Inicialización de variables.</a></li>
+                <li><a href="#concatenacion">Concatenación.</a></li>
+                <li><a href="#comentarios">Comentarios.</a></li>
+                <li><a href="#funcionPrompt">Función prompt.</a></li>
+                <li><a href="#operadoresIncremento">Operadores de incremento.</a></li>
+                <li><a href="#write">Función Write.</a></li>
+                <li><a href="#arrays">Arrays.</a></li>
+                <li><a href="#metodosArrays">Métodos de arreglos.</a></li>
+                <li><a href="#propiedadstyle">Propiedad Style.</a></li>
+                <li><a href="#condicionalif">Condicional IF.</a></li>
+                <li><a href="#operadoresRelacionales">Operadores relacionales.</a></li>
+                <li><a href="#operadoresLogicos">Operadores Lógicos.</a></li>
+                <li><a href="#funcionParseInt">Función parseInt.</a></li>
+                <li><a href="#isnan">Función is not number.</a></li>
+                <li><a href="#funciontypeof">Función typeof.</a></li>
+                <li><a href="#while">Bucle While.</a></li>
+                <li><a href="#dowhile">Bucle Do While.</a></li>
+                <li><a href="#math">Clase Math.</a></li>
+                <li><a href="#for">Bucle For.</a></li>
+                <li><a href="#funciones">Funciones.</a></li>
+                <li><a href="#llamadofunciones">Llamado a Funciones.</a></li>
+                <li><a href="#eventos">Que son eventos.</a></li>
+                <li><a href="#contruireventos">Construir eventos.</a></li>
+                <li><a href="#tiposeventos">Tipos de eventos.</a></li>
+                <li><a href="#eventosEnEtiqueta">Eventos en línea.</a></li>
+            </ol>
+        </aside>
+
+        <section id="section" onclick="showHeaderView()">
+
+            <h2 id="conceptosBasicos">Conceptos Básicos:</h2>
+            <p>Script que se ejecuta directamente en el ordenador, se puede agregar en la pagina con la etiqueta script
+                o en un archivo
+               aparte.</p>
+            <img src="../../../resources/javascript/Imagen0.PNG">
+
+            <h2 id="alert">Función Alert:</h2>
+            <p>Función para mostrar un cuadro de confirmación, es de tipo modal lo que bloquea el resto y de la
+                pantalla y detiene el flujo de ejecución.</p>
+            <img src="../../../resources/javascript/Imagen1.png">
+
+            <h2 id="enlazarArchivoJS">Enlazar archivo JS:</h2>
+            <p>Falta añadir la etiqueta Script y el atributo src con la ruta de la hoja.</p>
+            <img src="../../../resources/javascript/Imagen2.png">
+
+            <h2 id="tiposDatos">Tipos de datos:</h2>
+            <p>Existen estos tipos de datos.</p>
+            <img src="../../../resources/javascript/Imagen3.png">
+
+            <h2 id="nombreVariable">Nombrar variables:</h2>
+            <p>Reglas básicas para el nombramiento de variables.</p>
+            <img src="../../../resources/javascript/Imagen4.png">
+
+            <h2 id="iniciandoVarables">Iniciando variables:</h2>
+            <p>Formas de iniciar una variable.</p>
+            <img src="../../../resources/javascript/Imagen5.png">
+
+            <h2 id="concatenacion">Concatenación de texto:</h2>
+            <p>Para concatenar texto se utiliza el signo "+"</p>
+            <img src="../../../resources/javascript/Imagen6.png">
+
+            <h2 id="comentarios">Comentar código:</h2>
+            <p>Se comenta por línea o por bloque.</p>
+            <img src="../../../resources/javascript/Imagen7.png">
+
+            <h2 id="funcionPrompt">Función Prompt:</h2>
+            <p>Función de entrada de datos, es modal y detiene la ejecución del código</p>
+            <img src="../../../resources/javascript/Imagen8.png">
+
+            <h2 id="operadoresIncremento">Operadores de incremento:</h2>
+            <p>Estos son los operadores más utilizados.</p>
+            <img src="../../../resources/javascript/Imagen9.png">
+
+            <h2 id="write">Funcion write:</h2>
+            <p>Sirve para ecribir texto dentro de pagina, se escribe en el lugar que fue llamada.</p>
+            <img src="../../../resources/javascript/Imagen10.png">
+
+            <h2 id="arrays">Arreglos:</h2>
+            <p>Se pueden declarar de dos formas con el mismo resultado, y pueden contener objetos de diferentes tipos. Iniciando
+            con el indice '0'</p>
+            <img src="../../../resources/javascript/Imagen11.png">
+
+            <h2 id="metodosArrays">Métodos de arreglos:</h2>
+            <p>Metodos y atributos mas utilizados.</p>
+            <img src="../../../resources/javascript/Imagen12.png">
+
+            <h2 id="propiedadstyle">Modificando la propiedad style:</h2>
+            <p>Sirve para modificar atributos de las etiquetas, ej: Se puede modificar y cambiar height dinámicamente
+                en el inicio viene vacía, la propiedad clientHeight es la que se da cuando se cargó por
+                primera vez el elemento. Como ejemplo el aside de esta misma página cambia su altura en forma dinámica
+                dependiendo de la actura de la sección donde estan las imágenes.</p>
+            <img src="../../../resources/javascript/Imagen13.png">
+
+            <h2 id="condicionalif">Condicional IF:</h2>
+            <p>Uso de condicional.</p>
+            <img src="../../../resources/javascript/Imagen14.png">
+
+            <h2 id="operadoresRelacionales">Operadores Relacionales:</h2>
+            <p>Uso de operadores.</p>
+            <img src="../../../resources/javascript/Imagen15.png">
+
+            <h2 id="operadoresLogicos">Operadores Lógicos:</h2>
+            <p>Uso de operadores.</p>
+            <img src="../../../resources/javascript/Imagen16.png">
+
+            <h2 id="funcionParseInt">Función parseInt:</h2>
+            <p>Se usa para realizar el parseo de un string a un número.</p>
+            <img src="../../../resources/javascript/Imagen17.png">
+
+            <h2 id="isnan">Función isnotnumber:</h2>
+            <p>Se usa validar si una cadena es un número.</p>
+            <img src="../../../resources/javascript/Imagen18.png">
+
+            <h2 id="funciontypeof">Función typeof:</h2>
+            <p>Se usa para realizar el tipo de una variable.</p>
+            <img src="../../../resources/javascript/Imagen19.png">
+
+            <h2 id="while">Bucle While:</h2>
+            <p>Forma de uso.</p>
+            <img src="../../../resources/javascript/Imagen20.png">
+
+            <h2 id="dowhile">Bucle Do While:</h2>
+            <p>Ejecuta el bucle almenos en una ocación.</p>
+            <img src="../../../resources/javascript/Imagen21.png">
+
+            <h2 id="math">Clase Math:</h2>
+            <p>Clase con métodos estáticos para realizar operaciones matematicas.</p>
+            <img src="../../../resources/javascript/Imagen22.png">
+
+            <h2 id="for">Bucle For:</h2>
+            <p>Bucle definido para iteración.</p>
+            <img src="../../../resources/javascript/Imagen23.png">
+
+            <h2 id="funciones">Funciones:</h2>
+            <p>Modo de uso.</p>
+            <img src="../../../resources/javascript/Imagen24.png">
+
+            <h2 id="llamadofunciones">Llamado de Funciones:</h2>
+            <p>Se puede realizar el llamado desde el código HTML o desde el mismo JS.</p>
+            <img src="../../../resources/javascript/Imagen25.png">
+
+            <h2 id="eventos">Eventos</h2>
+            <p>Qué es un evento: </p>
+            <img src="../../../resources/javascript/Imagen26.png">
+
+            <h2 id="contruireventos">Cómo construir Eventos</h2>
+            <p>Formas de construir eventos: </p>
+            <img src="../../../resources/javascript/Imagen27.png">
+
+            <h2 id="tiposeventos">Tipos de Eventos</h2>
+            <p>Eventos mas usados: </p>
+            <img src="../../../resources/javascript/Imagen28.png">
+            <img src="../../../resources/javascript/Imagen29.png">
+
+            <h2 id="eventosEnEtiqueta">Eventos dentro de la etiqueta:</h2>
+            <p>No es aconsejable y esta obsoleto.</p>
+            <img src="../../../resources/javascript/Imagen30.png">
+
+        </section>
+
+    <script>fixAsideHeight();</script>
+
+    </body>
+
+    <footer>
+        Fin de la página.
+    </footer>
 </html>

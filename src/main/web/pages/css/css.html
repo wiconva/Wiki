@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>HTML</title>
     <link rel="stylesheet" href="../../css/styles-sheets.css">
+    <script src="../../javascript/mijavascript.js"></script>
 </head>
 <body>
-<header>
+<header id="header">
     <nav>
         <a href="../../index.html">Inicio</a>
         <a href="../html/html.html">HTML</a>
@@ -14,7 +15,7 @@
         <a href="../javascript/javascript.html">Java Script</a>
     </nav>
 </header>
-<aside id="barraNavegacion">
+<aside id="aside">
     <h3>CSS</h3>
     <ol>
         <li><a href="#conceptosBasicos">Conceptos básicos.</a></li>
@@ -26,8 +27,8 @@
         <li><a href="#border">Propiedad Border.</a></li>
     </ol>
 </aside>
-<section>
-    <button><a href="../../index.html">Inicio</a></button>
+<section id="section" onclick="showHeaderView()">
+
     <h2 id="conceptosBasicos">Conceptos Básicos</h2>
     <p>Es un estandar para dotar de apariencia una páginca WEB, Se puede incluir através de una hoja con extensión
        .css, en el header o directamente sobre una etiqueta.</p>
@@ -67,6 +68,7 @@
     <img src="../../../resources/css/Imagen6.PNG">
 
 </section>
+<script>fixAsideHeight();</script>
 </body>
 <footer>
     Fin de la página.

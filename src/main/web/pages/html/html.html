@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <title>HTML</title>
     <link rel="stylesheet" href="../../css/styles-sheets.css">
+    <script src="../../javascript/mijavascript.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
             <a href="../../index.html">Inicio</a>
             <a href="../html/html.html">HTML</a>
             <a href="../css/css.html">CSS</a>
-            <a href="../css/css.html">Java Script</a>
+            <a href="../javascript/javascript.html">Java Script</a>
         </nav>
     </header>
 
-    <aside>
+    <aside id="aside">
         <h3>HTML</h3>
         <ol>
             <li><a href="#conceptosBasicos">Conceptos básicos.</a></li>
@@ -28,7 +29,7 @@
         </ol>
     </aside>
 
-    <section>
+    <section id="section" onclick="showHeaderView()">
 
         <h2 id="conceptosBasicos">Conceptos Básicos</h2>
         <p>Es un standar compuesto por estas tecnologías: </p>
@@ -61,6 +62,7 @@
         <p>si se deasea agregar un pie a la imagen se utiliza la etiqueta figcaption dentro de figure.</p>
         <img src="../../../resources/html/Imagen6.PNG">
     </section>
+    <script>fixAsideHeight();</script>
 </body>
 <footer>
     Fin de la página.
