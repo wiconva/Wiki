@@ -8,14 +8,9 @@
     </head>
 
     <body>
-        <header id="header">
-            <nav>
-                <a href="../../index.html">Inicio</a>
-                <a href="../html/html.html">HTML</a>
-                <a href="../css/css.html">CSS</a>
-                <a href="../javascript/javascript.html">Java Script</a>
-            </nav>
-        </header>
+    <header id="header">
+        <script src="../../javascript/header.js"></script>
+    </header>
 
         <aside id="aside">
             <h3>Java Script</h3>
@@ -46,10 +41,14 @@
                 <li><a href="#for">Bucle For.</a></li>
                 <li><a href="#funciones">Funciones.</a></li>
                 <li><a href="#llamadofunciones">Llamado a Funciones.</a></li>
+                <li><a href="#parametrosFunciones">Enviar y recibir parámetros.</a></li>
+                <li><a href="#pasarFunciones">Pasar funciones a variables</a></li>
                 <li><a href="#eventos">Que son eventos.</a></li>
                 <li><a href="#contruireventos">Construir eventos.</a></li>
                 <li><a href="#tiposeventos">Tipos de eventos.</a></li>
                 <li><a href="#eventosEnEtiqueta">Eventos en línea.</a></li>
+                <li><a href="#jquery">JQuery.</a></li>
+                <li><a href="#enlazarjquery">Enlazar JQuery.</a></li>
             </ol>
         </aside>
 
@@ -166,6 +165,17 @@
             <p>Se puede realizar el llamado desde el código HTML o desde el mismo JS.</p>
             <img src="../../../resources/javascript/Imagen25.png">
 
+            <h2 id="parametrosFunciones">Pasar y recibir parámetros:</h2>
+            <p>Se pueden pasar parámetros y asignar valores por defecto para que los mismos sean
+                opcionale, para devolver un valor basta con utilizar la palabra return seguido del valor a devolver.</p>
+            <img src="../../../resources/javascript/Imagen31.png">
+
+            <h2 id="pasarFunciones">Pasar una función a una variable:</h2>
+            <p>Se puede guardar funciones anónimas en variables para luego ser usadas. Se puede con la palabra function
+                o cambiando esto por el operador lambda, si no lleva parámetros se deja '()', si lleva uno se puede omitir
+                el paréntesis y si lleva más de uno es obligatorio.</p>
+            <img src="../../../resources/javascript/Imagen32.png">
+
             <h2 id="eventos">Eventos</h2>
             <p>Qué es un evento: </p>
             <img src="../../../resources/javascript/Imagen26.png">
@@ -182,6 +192,19 @@
             <h2 id="eventosEnEtiqueta">Eventos dentro de la etiqueta:</h2>
             <p>No es aconsejable y esta obsoleto.</p>
             <img src="../../../resources/javascript/Imagen30.png">
+
+            <h2 id="jquery">Jquery:</h2>
+            <p>Librería para simplificar el uso Java Script y evitar el problema de compatibilidad entre navegadores.</p>
+            <img src="../../../resources/javascript/Imagen33.png">
+
+            <h2 id="enlazarjquery">Enlazar Jquery:</h2>
+            <p>Para usar la librería se debe enlazar con una etiqueta script, esta siempre debe ir despues del la hoja de
+                estilos ya que en ocaciones el códiog manipula los estilos. Se puede descargar la librería directamente
+                en el proyecto o, colocar la url de una página que ofrezca el recurso buscandolo en el navedor como
+                'CDN JQuery'.<br>
+                La función de document.ready(lambda), ocaciona que el navegador espere hasta que la librería este cargada
+                para ejecutar la función anónima que se pasa como parámetro.</p>
+            <img src="../../../resources/javascript/Imagen34.png">
 
         </section>
 

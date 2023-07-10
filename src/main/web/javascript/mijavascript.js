@@ -19,7 +19,7 @@ function showHeaderView (e) {
    }
 }
 
-// Ajusta el tamaño de de la barra de contenido en función del contenido de la section.
+// Ajusta el tamaño de de la barra de contenido 'aside' en función del contenido de la 'section'.
 function fixAsideHeight(){
     var section = document.getElementById("section");
     var aside = document.getElementById("aside");

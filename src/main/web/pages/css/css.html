@@ -7,68 +7,64 @@
     <script src="../../javascript/mijavascript.js"></script>
 </head>
 <body>
-<header id="header">
-    <nav>
-        <a href="../../index.html">Inicio</a>
-        <a href="../html/html.html">HTML</a>
-        <a href="../css/css.html">CSS</a>
-        <a href="../javascript/javascript.html">Java Script</a>
-    </nav>
-</header>
-<aside id="aside">
-    <h3>CSS</h3>
-    <ol>
-        <li><a href="#conceptosBasicos">Conceptos básicos.</a></li>
-        <li><a href="#estuctura">Estructura.</a></li>
-        <li><a href="#tipoSelector">Tipo selector.</a></li>
-        <li><a href="#etiquetaFloat">Propiedad Float y Display.</a></li>
-        <li><a href="#clear">Propiedad clear.</a></li>
-        <li><a href="#marginPadding">Propiedad Margin y Padding.</a></li>
-        <li><a href="#border">Propiedad Border.</a></li>
-    </ol>
-</aside>
-<section id="section" onclick="showHeaderView()">
+    <header id="header">
+        <script src="../../javascript/header.js"></script>
+    </header>
 
-    <h2 id="conceptosBasicos">Conceptos Básicos</h2>
-    <p>Es un estandar para dotar de apariencia una páginca WEB, Se puede incluir através de una hoja con extensión
-       .css, en el header o directamente sobre una etiqueta.</p>
-    <div>
-        <img src="../../../resources/css/Imagen1.PNG">
-    </div>
-    <h2 id="estuctura">Estructura:</h2>
-    <p>Consta de un selector seguido de la propiedades a manipular</p>
-    <img src="../../../resources/css/Imagen2.PNG">
+    <aside id="aside">
+        <h3>CSS</h3>
+        <ol>
+            <li><a href="#conceptosBasicos">Conceptos básicos.</a></li>
+            <li><a href="#estuctura">Estructura.</a></li>
+            <li><a href="#tipoSelector">Tipo selector.</a></li>
+            <li><a href="#etiquetaFloat">Propiedad Float y Display.</a></li>
+            <li><a href="#clear">Propiedad clear.</a></li>
+            <li><a href="#marginPadding">Propiedad Margin y Padding.</a></li>
+            <li><a href="#border">Propiedad Border.</a></li>
+        </ol>
+    </aside>
+    <section id="section" onclick="showHeaderView()">
 
-    <h2 id="tipoSelector">Tipos de selector:</h2>
-    <p>Los selectores pueden ser de tipo etiqueta: Nombre de la etiqueta, id: # o clase:'.'.</p>
-    <img src="../../../resources/css/Imagen3.PNG">
+        <h2 id="conceptosBasicos">Conceptos Básicos</h2>
+        <p>Es un estandar para dotar de apariencia una páginca WEB, Se puede incluir através de una hoja con extensión
+           .css, en el header o directamente sobre una etiqueta.</p>
+        <div>
+            <img src="../../../resources/css/Imagen1.PNG">
+        </div>
+        <h2 id="estuctura">Estructura:</h2>
+        <p>Consta de un selector seguido de la propiedades a manipular</p>
+        <img src="../../../resources/css/Imagen2.PNG">
 
-    <h2 id="etiquetaFloat">Etiqueta display y float:</h2>
-    <p>Diplay puede ajustar el comportamiento del contenedor y pasarlo de Block a inline, esto hace que no
-       ocupe el ancho total de la página y quita el salto de línea. El atributo float permite ubicar libremente
-       el contendor y que este se ajuste al tamaño del contenido, tambien sacandolo del flujo de control de los elemento
-       y ubicando el siguiente al lado, para romper este comportamiento el siguiente elemento debe llevar la etiqueta
-        clear: both.</p>
-    <img src="../../../resources/css/Imagen4.PNG">
+        <h2 id="tipoSelector">Tipos de selector:</h2>
+        <p>Los selectores pueden ser de tipo etiqueta: Nombre de la etiqueta, id: # o clase:'.'.</p>
+        <img src="../../../resources/css/Imagen3.PNG">
 
-    <h2 id="clear">Clear:</h2>
-    <p>Lleva al flujo normal al elemento que lo precede si se ha aplicado la etiqueta float y no se ubica al su lado como
-        se esperaria, agregando nuevamente el comportamiento de block a la etiqueta.</p>
-    <img src="../../../resources/css/Imagen7.PNG">
+        <h2 id="etiquetaFloat">Etiqueta display y float:</h2>
+        <p>Diplay puede ajustar el comportamiento del contenedor y pasarlo de Block a inline, esto hace que no
+           ocupe el ancho total de la página y quita el salto de línea. El atributo float permite ubicar libremente
+           el contendor y que este se ajuste al tamaño del contenido, tambien sacandolo del flujo de control de los elemento
+           y ubicando el siguiente al lado, para romper este comportamiento el siguiente elemento debe llevar la etiqueta
+            clear: both.</p>
+        <img src="../../../resources/css/Imagen4.PNG">
 
-    <h2 id="marginPadding">Margin y padding:</h2>
-    <p>El atributo Margin ajusta el margen desde el contenedor hasta el siguiente elemento y padding ajusta la distancia
-        entre los elementos que tiene el contenedor y el borde del mismo. Se pueden indicar cuatro valores uno para
-        cada ubicación cardinal; dos : vertical y horizontal o uno para que sea igual en los cuatro puntos.</p>
-    <img src="../../../resources/css/Imagen5.PNG">
+        <h2 id="clear">Clear:</h2>
+        <p>Lleva al flujo normal al elemento que lo precede si se ha aplicado la etiqueta float y no se ubica al su lado como
+            se esperaria, agregando nuevamente el comportamiento de block a la etiqueta.</p>
+        <img src="../../../resources/css/Imagen7.PNG">
 
-    <h2 id="border">Border y border-radius:</h2>
-    <p>Se utiliza para dar colocar el borde al contenedor y con radius para colocar el radio en las esquinas donde
-        se encuentran los bordes.</p>
-    <img src="../../../resources/css/Imagen6.PNG">
+        <h2 id="marginPadding">Margin y padding:</h2>
+        <p>El atributo Margin ajusta el margen desde el contenedor hasta el siguiente elemento y padding ajusta la distancia
+            entre los elementos que tiene el contenedor y el borde del mismo. Se pueden indicar cuatro valores uno para
+            cada ubicación cardinal; dos : vertical y horizontal o uno para que sea igual en los cuatro puntos.</p>
+        <img src="../../../resources/css/Imagen5.PNG">
 
-</section>
-<script>fixAsideHeight();</script>
+        <h2 id="border">Border y border-radius:</h2>
+        <p>Se utiliza para dar colocar el borde al contenedor y con radius para colocar el radio en las esquinas donde
+            se encuentran los bordes.</p>
+        <img src="../../../resources/css/Imagen6.PNG">
+
+    </section>
+    <script>fixAsideHeight();</script>
 </body>
 <footer>
     Fin de la página.
