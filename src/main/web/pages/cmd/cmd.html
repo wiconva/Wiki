@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="Esp">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <link rel="stylesheet" href="../../css/styles-sheets.css">
+    <script src="../../javascript/mijavascript.js"></script>
+</head>
+<body>
+<header id="header">
+    <script src="../../javascript/header.js"></script>
+</header>
+
+<aside id="aside">
+    <h3>CMD</h3>
+    <ol>
+        <li><a href="#echo">Echo y cls.</a></li>
+        <li><a href="#iis">ISS.</a></li>
+        <li><a href="#crearDirectorio">Crear directorio.</a></li>
+        <li><a href="#comprimirArchivos">Comprimir directorio zip.</a></li>
+        <li><a href="#copiarArchivos">Copiar archivos.</a></li>
+        <li><a href="#extraerZip">Extraer ZIP.</a></li>
+        <li><a href="#borrarArchivos">Borrar archivos.</a></li>
+        <li><a href="#crearTarea">Crear tarea programada.</a></li>
+        <li><a href="#ejecutarTarea">Ejecutar tarea programada.</a></li>
+        <li><a href="#finalizarTarea">Finalizar tarea programada.</a></li>
+        <li><a href="#minimizarVentanas">Minimizar todas la ventanas.</a></li>
+    </ol>
+</aside>
+<section id="section" onclick="showHeaderView()">
+
+    <h2 id="echo">Echo y cls.</h2>
+    <p>El comando 'echo' evita que se imprima todo en el promt del cmd y el comando cls borra todo del promt.
+    </p>
+    <div>
+        <img src="../../../resources/cmd/Imagen11.png">
+    </div>
+
+    <h2 id="iss">Comandos para la adminsitración ISS.</h2>
+    <p>Los comando para ISS se ejecutan mediante la aplicación que tiene integrada appCmd + el comando. Para iniciar
+       una aplicación dado el nombre se usa : "%windir%\system32\inetsrv\appcmd start site /site.name:AppStudio".<br>
+        Se puede utilizar los comandos start, stop, restart, delete, list...
+    </p>
+    <div>
+        <img src="../../../resources/cmd/Imagen1.PNG">
+    </div>
+
+    <h2 id="crearDirectorio">Crear directorio si no existe.</h2>
+    <p>Basta con utilizar el comando if not exists la ruta de evaluación y luego el comando mdir con la ruta de creación.
+    </p>
+    <div>
+        <img src="../../../resources/cmd/Imagen2.PNG">
+    </div>
+
+    <h2 id="comprimirArchivos">Comprimir archivos en zip.</h2>
+    <p>Se realiza un cambio a la ubicación donde se encuentra los archivos a comprimir y se ejecuta tar, pasando como
+        parámetros el nombre del paquete generado y el nombre de la carpteta base.
+    </p>
+    <div>
+        <img src="../../../resources/cmd/Imagen3.PNG">
+    </div>
+
+    <h2 id="copiarArchivos">Copiar archivos.</h2>
+    <p>Cambiar la ubicacion a donde se encuentra el archivo a copiar y luego pasar como parámetro el origen y el desino
+        del archivo copiado, se pueden cambiar las extensiones como en el ejemplo.
+    </p>
+    <div>
+        <img src="../../../resources/cmd/Imagen4.PNG">
+    </div>
+
+    <h2 id="extraerZip">Extraer ZIP.</h2>
+    <p>Cambiar la ubicacion a donde extraerá el archivo y ejecutar el comando tar -xf pasando como parámetro la ruta del
+        paquete.
+    </p>
+    <div>
+        <img src="../../../resources/cmd/Imagen5.PNG">
+    </div>
+
+    <h2 id="borrarArchivos">Borrar archivos.</h2>
+    <p>Cambiar la ubicacion a donde borrará el archivo y ejecutar el comando "Del", pasando como parámetro el nombre del
+        archivo a borrar.
+    </p>
+    <div>
+        <img src="../../../resources/cmd/Imagen6.PNG">
+    </div>
+
+    <h2 id="crearTarea">Crear tarea programada.</h2>
+    <p>Para  crear una tarea en el programador de tareas de Windows se utiliza el comando schtask y se pasan como parámetros
+        el tipo de ejecución, el nombre de la tarea creada, la acción de la tarea, si se desea que se ejecute cuando el
+        usuario sea otro y tenga permisos de administrado se pasa /ru System. Si la tarea ya existe no falla la ejecución del
+        comando.
+    </p>
+    <div>
+        <img src="../../../resources/cmd/Imagen7.PNG">
+    </div>
+
+    <h2 id="ejecutarTarea">Ejecutar tarea programada.</h2>
+    <p>Para  ejecutar la tarea programada se utiliza el comando schtask y se pasa como argumento /run y el nombre de la tarea .
+    </p>
+    <div>
+        <img src="../../../resources/cmd/Imagen8.PNG">
+    </div>
+
+    <h2 id="finalizarTarea">Finaliza tarea programada.</h2>
+    <p>Para finalizar una tarea programada que esta en ejecucion se utiliza el comando schtask y
+        se pasa como argumento /end y el nombre de la tarea .
+    </p>
+    <div>
+        <img src="../../../resources/cmd/Imagen9.png">
+    </div>
+
+    <h2 id="minimizarVentanas">Minimizar todas las ventanas.</h2>
+    <p>Para minimizar todas la ventanas se ejecuta un comando en powershell desde la consola CMD con powershell -command.
+    </p>
+    <div>
+        <img src="../../../resources/cmd/Imagen10.png">
+    </div>
+
+
+
+</section>
+<script>fixAsideHeight();</script>
+</body>
+<footer>
+    Fin de la página.
+</footer>
+</html>
