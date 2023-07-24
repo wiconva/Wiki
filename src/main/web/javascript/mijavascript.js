@@ -24,6 +24,4 @@ function fixAsideHeight(){
     var section = document.getElementById("section");
     var aside = document.getElementById("aside");
     aside.style.height = section.clientHeight+"px"  ;
-
-
 }
