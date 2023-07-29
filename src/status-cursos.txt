@@ -1,4 +1,4 @@
     curso       video
-    JavaScript  39
+    JavaScript  44
     css
     HTML
