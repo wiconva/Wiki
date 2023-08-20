@@ -5,4 +5,5 @@ document.write("<nav><a href=\"../../index.html\">Inicio</a>"+
     "<a href=\"../javascript/javascript.html\">Java Script</a>"+
     "<a href=\"../cmd/cmd.html\">CMD</a>"+
     "<a href=\"../maven/maven.html\">Maven</a>"+
+    "<a href=\"../testing/testing.html\">Testing</a>"+
     "</nav>");

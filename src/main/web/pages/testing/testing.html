@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="Esp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Testing</title>
+        <link rel="stylesheet" href="../../css/styles-sheets.css">
+        <script src="../../javascript/mijavascript.js"></script>
+    </head>
+
+    <body>
+    <header id="header">
+        <script src="../../javascript/header.js"></script>
+    </header>
+
+        <aside id="aside">
+            <h3>Automated Test</h3>
+            <ol>
+                <li><a href="#arquitectura">Arquitectura.</a></li>
+                <li><a href="#selenium">Selenium y TestNG.</a></li>
+                <li><a href="#crearPrueba">Crear Prueba.</a></li>
+                <li><a href="#driver">Driver.</a></li>
+                <li><a href="#implicitWait">Implicit Wait.</a></li>
+                <li><a href="#assert">Clase Assert.</a></li>
+                <li><a href="#findElements">Find Elements.</a></li>
+                <li><a href="#takeScreenShot">Take Screen Shot.</a></li>
+                <li><a href="#jsExecutor">Java Script Executor.</a></li>
+                <li><a href="#abrirPestaña">Abrir Pestaña nueva.</a></li>
+
+            </ol>
+        </aside>
+
+        <section id="section" onclick="showHeaderView()">
+
+            <h2 id="arquitectura">Arquitectura:</h2>
+            <p>Las clases de un proyecto de pruebas automatizadas se colocan dentro de la carpeta test, así mismo los recursos
+               que se requieran dentro de la carpeta resources (archivos, properties, test suite...).</p>
+            <img src="../../../resources/testing/Imagen1.png">
+
+            <h2 id="selenium">Selenium y TestNG:</h2>
+            <p>Selenium es la librería que nos permite interactuar con un navegador y TestNG es otra librería que permite
+               incluir validaciones dentro de esa iteracción. Para incluirla dentro del proyecto se puede utilizar Maven
+                con su "pom" que es un gestor de depencias.<br>
+               Recordar que cuando se ejecuta desde Intellij o Maven se agregan automaticamente los classpath
+               pero cuando se ajecuta de otra forma se debe agragar el classpath de la depencias usadas</p>
+            <img src="../../../resources/testing/Imagen2.png">
+
+
+            <h2 id="crearPrueba">Crear una prueba:</h2>
+            <p>Para crear una prueba basta con crear un método de la clase y colocar la etiqueta @Test de TestNG. esta
+               se ejecutará automaticamente con Maven o con el boton de play en el IDE.</p>
+            <img src="../../../resources/testing/Imagen3.png">
+
+            <h2 id="driver">Driver:</h2>
+            <p>El Driver es el elemento que nos permite realizar acciones sobre el navegador, se debe descargar el Driver
+                para cada navegador, almacenarlo en una ruta del proyecto y ajustar esos datos dentro de las propiedades
+                del sistema. Esto se puede hacer en un metodo con la etiqueta @BeforeTest que se ejecutará antes de cualquier
+                prueba para esa clase.</p>
+            <img src="../../../resources/testing/Imagen4.png">
+
+            <h2 id="implicitWait">Implicit Wait:</h2>
+            <p>Ajusta el tiempo de espera de un elemento a que se cargado en el navegador en una la página, con el objeto de tipo Duration de java.time se ajust
+                el tiempo de espera.</p>
+            <img src="../../../resources/testing/Imagen5.png">
+
+            <h2 id="assert">Clase Assert:</h2>
+            <p>Clase statica que pertenece el paquete TestNG que se utiliza para realizar las validaciones si el assert falla la
+                prueba se detiene. Existen muchos métodos en esta clase para realizar las validaciones</p>
+            <img src="../../../resources/testing/Imagen6.png">
+
+            <h2 id="findElements">Find Elements:</h2>
+            <p>Método de la clase driver que devuelve una lista con todas los elementos coincidentes para luego tratar a cada
+               uno de ellos.</p>
+            <img src="../../../resources/testing/Imagen7.png">
+
+            <h2 id="takeScreenShot">Take Screen Shot:</h2>
+            <p>Para tomar una captura de pantalla se debe realizar un cast del driver para obtener un objeto de tipo
+                TakesScreenShot y con este utilizar el método getScreenShotAs como un archivo. Luego de tener el archivo se
+                tiene que copiar a la ubicación deseada.</p>
+            <img src="../../../resources/testing/Imagen8.png">
+
+            <h2 id="itResult">Clase ItResult:</h2>
+            <p>Esta clase puede ser recibida en los métodos para validar el estado en el que termina una prueba y dependiendo
+                del mismo realizar alguna acción, ej: tomar una captura si la pruebaa falla.</p>
+            <img src="../../../resources/testing/Imagen9.png">
+
+            <h2 id="jsExecutor">Java Script Executor:</h2>
+            <p>Este objeto sirve para ejecutar código JS desde selenium en el navegador que este activo. Se realiza un cast
+                del driver y se pasa el código JS como String .</p>
+            <img src="../../../resources/testing/Imagen10.png">
+
+            <h2 id="abrirPestaña">Abrir nueva pestaña:</h2>
+            <p>Se hace mediante código JS.</p>
+            <img src="../../../resources/testing/Imagen11.png">
+
+            <h2 id="activarVentana">Activar pestaña:</h2>
+            <p>Para activar una pestaña y trabajar sobre ella se debe usar el driver con el método switchTo y luego usar el
+                método window pasando como argumento el hadler de la ventana que el el string que la identifica. Recordar
+               cerrar todas las pestañas al terminar la prueba o usar driver quit que cierra todo.</p>
+            <img src="../../../resources/testing/Imagen12.png">
+
+
+
+
+        </section>
+    <script>fixAsideHeight();</script>
+    </body>
+
+    <footer>
+        Fin de la página.
+    </footer>
+</html>
