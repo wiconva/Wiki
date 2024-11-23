@@ -25,6 +25,8 @@
                 <li><a href="#takeScreenShot">Take Screen Shot.</a></li>
                 <li><a href="#jsExecutor">Java Script Executor.</a></li>
                 <li><a href="#abrirPestaña">Abrir Pestaña nueva.</a></li>
+                <li><a href="#tituloVentana">Obtener título.</a></li>
+                <li><a href="#runheadless">Run headless.</a></li>
 
             </ol>
         </aside>
@@ -97,6 +99,15 @@
                 método window pasando como argumento el hadler de la ventana que el el string que la identifica. Recordar
                cerrar todas las pestañas al terminar la prueba o usar driver quit que cierra todo.</p>
             <img src="../../../resources/testing/Imagen12.png">
+
+            <h2 id="tituloVentana">Obtener Titulo:</h2>
+            <p>Para obtener el titulo del tab, se hace con el driver y la función getTitle de la clase WebDriver.</p>
+            <img src="../../../resources/testing/Imagen13.png">
+
+            <h2 id="runheadless">Run Headless:</h2>
+            <p>Para ejecutar las pruebas con el navegador oculto se utiliza la clase ChomeOptions y se agrega la opción
+            "--headless", al momento de crear el objeto WebDriver se pasa esta clase con las opciones ajustadas.</p>
+            <img src="../../../resources/testing/Imagen14.png">
 
 
 
