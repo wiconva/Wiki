@@ -18,15 +18,15 @@ document.write("<div>"+
 "</div>"+
     "<div id='javaSubmenu' hidden= 'hidden' onmouseleave='submenuOcultar(event)' >"+
         "<ol>"+
-            "<li><a href=\"#conceptosBasicos\">Conceptos Básicos.</a></li>"+
-            "<li><a href=\"#configuracion\">Configuración.</a></li>"+
+            "<li><a href=\"../java/java.html#conceptosBasicos\">Conceptos Básicos.</a></li>"+
+            "<li><a href=\"../java/java.html#configuracion\">Configuración.</a></li>"+
         "</ol>"+
     "</div>"+
     "<div id='javaScriptSubmenu' hidden= 'hidden' onmouseleave='submenuOcultar(event)' >"+
         "<ol>"+
-            "<li><a href=\'#conceptosBasicos\'>Conceptos básicos.</a></li>"+
-            "<li><a href=\"#alert\">Función Alert.</a></li>"+
-            "<li><a href=\"#enlazarArchivoJS\">Enlazar archivos JS.</a></li>"+
+            "<li><a href=\'../javascript/javascript.html#conceptosBasicos\'>Conceptos básicos.</a></li>"+
+            "<li><a href=\"../javascript/javascript.html#alert\">Función Alert.</a></li>"+
+            "<li><a href=\"../javascript/javascript.html#enlazarArchivoJS\">Enlazar archivos JS.</a></li>"+
         "</ol>"+
     "</div>"
 
