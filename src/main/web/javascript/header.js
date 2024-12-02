@@ -11,13 +11,23 @@
     +"</nav>");*/
 
 document.write("<div>"+
-    " <nav>"+
-    "<a href=\"#\" id='javaMenu'><button onmouseover='submenuCliente()'>JAVA</button></a>"+
-    "</nav>"+
-    "</div>"+
-    "<div id='subcliente' hidden= 'hidden' onmouseleave='submenuCliente()'>"+
+" <nav>"+
+    "<a href=\"../java/java.html\" id='java'><button onmouseover='submenuMostrar(event)'>JAVA</button></a>"+
+    "<a href=\"../javascript/javascript.html\" id='javaScript'><button onmouseover='submenuMostrar(event)'>JAVA SCRIP</button></a>"+
+  "</nav>"+
+"</div>"+
+    "<div id='javaSubmenu' hidden= 'hidden' onmouseleave='submenuOcultar(event)' >"+
         "<ol>"+
             "<li><a href=\"#conceptosBasicos\">Conceptos Básicos.</a></li>"+
             "<li><a href=\"#configuracion\">Configuración.</a></li>"+
         "</ol>"+
-    "</div>");
+    "</div>"+
+    "<div id='javaScriptSubmenu' hidden= 'hidden' onmouseleave='submenuOcultar(event)' >"+
+        "<ol>"+
+            "<li><a href=\'#conceptosBasicos\'>Conceptos básicos.</a></li>"+
+            "<li><a href=\"#alert\">Función Alert.</a></li>"+
+            "<li><a href=\"#enlazarArchivoJS\">Enlazar archivos JS.</a></li>"+
+        "</ol>"+
+    "</div>"
+
+);

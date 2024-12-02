@@ -18,22 +18,23 @@ function fixAsideHeight(){
 }
 
 //Oculata submenú cliente.
-function submenuCliente (){
-    var submenu = document.getElementById("subcliente");
+function submenuMostrar (e){
+    var submenu = document.getElementById(e.fromElement.id+"Submenu");
+    console.log(submenu)
+
     if(submenu.hidden == true){
         submenu.hidden = false;
-        document.querySelector("#menucliente button").style.backgroundColor="#0000";
-        document.querySelector("#menucliente button").style.color="red";
-    }else{
-        submenu.hidden = true;
-        document.querySelector("#menucliente button").style.backgroundColor="aliceblue";
-        document.querySelector("#menucliente button").style.color="black";
+        //menu.style.backgroundColor="#0000";
+        //menu.style.color="red";
     }
+}
 
-    var submenuItems = document.querySelectorAll("#subcliente button");
-    for (var i = 0; i< submenuItems.length; i++){
-        submenuItems[i].addEventListener("mouseover",function (){this.style.backgroundColor = "#0000"});
-        submenuItems[i].addEventListener("mouseleave",function (){this.style.backgroundColor="black"});
-    }
+function  submenuOcultar (e){
+    var submenu = e.fromElement;
+    if(submenu.hidden == false){
+        submenu.hidden = true;
+        //menu.style.backgroundColor="#0000";
+        //menu.style.color="red";
+        }
 
 }
