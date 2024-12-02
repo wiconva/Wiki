@@ -1,16 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Esp">
 <head>
     <meta charset="UTF-8">
-    <title>Java Script</title>
+    <title>Java</title>
+    <link rel="stylesheet" href="../../css/styles-sheets.css">
+    <script src="../../javascript/mijavascript.js"></script>
 </head>
+
 <body>
-    <h3>Java Script</h3>
-    <ol>
-        <li><a>Conceptos básicos</a></li>
-    </ol>
+    <header id="header">
+        <script src="../../javascript/header.js"></script>
+    </header>
+
+    <aside id="aside">
+        <h3>HTML</h3>
+        <ol>
+            <li><a href="#conceptosBasicos">Conceptos Básicos.</a></li>
+            <li><a href="#configuracion">Configuración.</a></li>
+        </ol>
+    </aside>
+
+    <section id="section" onclick="showHeaderView(event)">
+
+        <h2 id="conceptosBasicos">Conceptos Básicos</h2>
+        <p>Conocido como el java pesistence application, sirve para trabajar con base de datos de una forma mas limpia.</p>
+        <img src="../../../resources/java/JPA_basics.PNG">
+        <img src="../../../resources/java/JPA_basics_2.png">
+        <img src="../../../resources/java/JPA_basics_3.png">
+        <img src="../../../resources/java/JPA_basics_4.png">
+
+
+        <h2 id="configuracion">Configuración</h2>
+        <p>Ya que JPA solo es la interface que ofrece java para trabajar persistencia con base de datos, es necesario tener
+        un proveedor de persistencia como HIBERNET,  para ello descargamos la depencia de hibernet-core y el jdbc connector
+        para que hibernet pueda gestionar la conexión con base de datos</p>
+        <img src="../../../resources/java/JPA_dependencies.png">
+        <textarea >
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>5.6.14.Final</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.microsoft.sqlserver</groupId>
+                <artifactId>mssql-jdbc</artifactId>
+                <version>12.2.0.jre8</version>
+            </dependency>
+        </textarea>
+
+        <p>Con las depencias instaladas se debe agregar el archivo persistence.xml en el path del proyecto que es en la
+            carpeta resources, este archivo lleva las etiquetas necesarias para que el proveedor jpa pueda interactual
+            con la base datos.</p>
+        <img src="../../../resources/java/JPA_archivo_persistence.png">
+        <textarea>
+            <?xml version="1.0" encoding="UTF-8"?>
+                <persistence version="2.2"
+                         xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+                <persistence-unit name="persistencia" >
+
+                    <class>com.practice.persistence.Empleado</class>
+
+                    <properties>
+                        <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+                        <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;database=myBase;encrypt=false"/>
+                        <property name="javax.persistence.jdbc.user" value="admin"/>
+                        <property name="javax.persistence.jdbc.password" value="admin"/>
+
+                        <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServer2016Dialect"/>
+                        <property name="hibernate.show_sql" value="true"/>
+                        <property name="hibernate.format_sql" value="false"/>
+                        <property name="hibernate.hbm2ddl.auto" value="create"/>
+
+                    </properties>
+                </persistence-unit>
+            </persistence>
+        </textarea>
+
+
+    </section>
+    <script>fixAsideHeight();</script>
 </body>
-<footer>
-    <button><a href="../../index.html">Inicio</a></button>
-</footer>
+    <footer>
+        Fin de la página.
+    </footer>
 </html>
