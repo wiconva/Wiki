@@ -13,7 +13,7 @@
 document.write("<div>"+
 " <nav>"+
     "<a href=\"../java/java.html\" id='java'><button onmouseover='submenuMostrar(event)'>JAVA</button></a>"+
-    "<a href=\"../javascript/javascript.html\" id='javaScript'><button onmouseover='submenuMostrar(event)'>JAVA SCRIP</button></a>"+
+    "<a href=\"../javascript/javascript.html\" id='javaScript'><button onmouseover='submenuMostrar(event)'>JAVA SCRIPT</button></a>"+
   "</nav>"+
 "</div>"+
     "<div id='javaSubmenu' hidden= 'hidden' onmouseleave='submenuOcultar(event)' >"+
