@@ -20,10 +20,9 @@ function fixAsideHeight(){
 //Oculata submenú cliente.
 function submenuMostrar (e){
     var submenu = document.getElementById(e.fromElement.id+"Submenu");
-    console.log(submenu)
-
     if(submenu.hidden == true){
         submenu.hidden = false;
+
         //menu.style.backgroundColor="#0000";
         //menu.style.color="red";
     }

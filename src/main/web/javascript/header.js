@@ -14,6 +14,7 @@ document.write("<div>"+
 " <nav>"+
     "<a href=\"../java/java.html\" id='java'><button onmouseover='submenuMostrar(event)'>JAVA</button></a>"+
     "<a href=\"../javascript/javascript.html\" id='javaScript'><button onmouseover='submenuMostrar(event)'>JAVA SCRIPT</button></a>"+
+    "<a href=\"../gradle/gradle.html\" id='gradle'><button onmouseover='submenuMostrar(event)'>GRADLE</button></a>"+
   "</nav>"+
 "</div>"+
     "<div id='javaSubmenu' hidden= 'hidden' onmouseleave='submenuOcultar(event)' >"+
@@ -28,6 +29,10 @@ document.write("<div>"+
             "<li><a href=\"../javascript/javascript.html#alert\">Función Alert.</a></li>"+
             "<li><a href=\"../javascript/javascript.html#enlazarArchivoJS\">Enlazar archivos JS.</a></li>"+
         "</ol>"+
+    "</div>"+
+    "<div id='gradleSubmenu' hidden= 'hidden' onmouseleave='submenuOcultar(event)' >"+
+        "<ol>"+
+            "<li><a href=\'../gradle/gradle.html#archivoBuild\'>Archivo gradle.build.kts</a></li>"+
+        "</ol>"+
     "</div>"
-
 );

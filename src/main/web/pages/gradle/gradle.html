@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="Esp">
+<head>
+    <meta charset="UTF-8">
+    <title>Java</title>
+    <link rel="stylesheet" href="../../css/styles-sheets.css">
+    <script src="../../javascript/mijavascript.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <script src="../../javascript/header.js"></script>
+    </header>
+
+    <section id="section" onclick="showHeaderView(event)">
+
+        <h2 id="archivoBuild">Archivo Build kotlin</h2>
+        <p>Gradle requiere algunos archivos para su configuración, el archivo en el archivo gradle.properties se agregar propiedades que pueden ser leídas por las tareas registradas. El archivo setting.gradle.kts se configura el nombre del proyecto [rootProject.name = "Practicas"] y en el archivo build.gradle.kts se crean o registran todas las tareas que se usaran posteriormente.</p>
+        <img src="../../../resources/gradle/Gradle_archivo_build.png">
+        <textarea>
+            group = "com.pruebas"
+            version = "1.0-SNAPSHOT"
+
+            plugins {
+                java
+            }
+
+
+            repositories {
+                mavenCentral()
+            }
+
+            dependencies {
+                // https://mvnrepository.com/artifact/io.javalin/javalin
+                implementation("io.javalin:javalin:4.6.4")
+                implementation("org.slf4j:slf4j-simple:1.8.0-beta4")
+
+            }
+        </textarea>
+
+    </section>
+</body>
+    <footer>
+        Fin de la página.
+    </footer>
+</html>
