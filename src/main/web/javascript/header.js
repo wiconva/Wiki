@@ -12,9 +12,10 @@
 
 document.write("<div>"+
 " <nav>"+
-    "<a href=\"../java/java.html\" id='java'><button onmouseover='submenuMostrar(event)'>JAVA</button></a>"+
+    "<a href=\"#\" id='java'><button onmouseover='submenuMostrar(event)'>JAVA</button></a>"+
     "<a href=\"../javascript/javascript.html\" id='javaScript'><button onmouseover='submenuMostrar(event)'>JAVA SCRIPT</button></a>"+
     "<a href=\"../gradle/gradle.html\" id='gradle'><button onmouseover='submenuMostrar(event)'>GRADLE</button></a>"+
+    "<a href=\"../git/git.html\" id='git'><button onmouseover='submenuMostrar(event)'>GIT</button></a>"+
   "</nav>"+
 "</div>"+
     "<div id='javaSubmenu' hidden= 'hidden' onmouseleave='submenuOcultar(event)' >"+
@@ -36,6 +37,11 @@ document.write("<div>"+
             "<li><a href=\'../gradle/gradle.html#tareaFatJar\'>Crear fat jar con las depencias.</a></li>"+
              "<li><a href=\'../gradle/gradle.html#tareaInternalJarDependencies\'>Crear jar con depencias en lib</a></li>"+
              "<li><a href=\'../gradle/gradle.html#arbolProyectoGradle\'>Arbol proyecto Gradle 'Tareas'</a></li>"+
+        "</ol>"+
+    "</div>"+
+    "<div id='gitSubmenu' hidden= 'hidden' onmouseleave='submenuOcultar(event)' >"+
+        "<ol>"+
+            "<li><a href=\'../git/git.html#compararCambioEnSeleccion\'>Archivo gradle.build.kts</a></li>"+
         "</ol>"+
     "</div>"
 );

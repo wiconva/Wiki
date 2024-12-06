@@ -10,15 +10,9 @@ function showHeaderView (e) {
     }
 }
 
-// Ajusta el tamaño de de la barra de contenido 'aside' en función del contenido de la 'section'.
-function fixAsideHeight(){
-    var section = document.getElementById("section");
-    var aside = document.getElementById("aside");
-    aside.style.height = section.clientHeight+"px"  ;
-}
-
 //Oculata submenú cliente.
 function submenuMostrar (e){
+    console.log("Mostrando submenu.")
     var submenu = document.getElementById(e.fromElement.id+"Submenu");
     if(submenu.hidden == true){
         submenu.hidden = false;
