@@ -14,7 +14,7 @@
 
     <section id="section" onclick="showHeaderView(event)">
 
-        <h2 id="archivoBuild">Archivo Build kotlin</h2>
+        <h2 id="archivoBuild">Archivo Build kotlin.</h2>
         <p>Gradle requiere algunos archivos para su configuración, el archivo en el archivo gradle.properties se agregar propiedades que pueden ser leídas por las tareas registradas. El archivo setting.gradle.kts se configura el nombre del proyecto [rootProject.name = "Practicas"] y en el archivo build.gradle.kts se crean o registran todas las tareas que se usaran posteriormente.</p>
         <img src="../../../resources/gradle/Gradle_archivo_build.png">
         <textarea>
@@ -37,6 +37,65 @@
 
             }
         </textarea>
+
+
+        <h2 id="tareaFatJar">Crear fat jar con las depencias.</h2>
+        <p>Crea una tarea para generar un archivo jar con todos los bitcode y las depencias necesarias no empaquetas.</p>
+        <img src="../../../resources/gradle/Gradle_tarea_fatjar.png">
+        <textarea>
+            tasks.register<Jar>("createFatJar") {
+            duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+            manifest {
+                attributes(
+                    "Main-Class" to "com.practicas.Main"
+                )
+            }
+
+            // Incluir los archivos .class del proyecto
+            from(sourceSets.main.get().output)
+
+            // Incluir las dependencias descomprimidas
+            doFirst {
+                configurations.runtimeClasspath.get().forEach { file ->
+                    from(zipTree(file.absoluteFile))
+                }
+            }
+        }
+
+        tasks.named("build") {
+            dependsOn("createFatJar")
+        }
+        </textarea>
+
+        <h2 id="tareaInternalJarDependencies">Crear jar con depencias al mismo nivel en carpeta lib.</h2>
+        <p>Se registra una tarea para crear un archivo jar con los binarios y al mismo nivel agregar una carpeta lib con todas las dependencias en formato jar. Se agrega la clase principal al manifest del jar principal y el classpath con cada una de las dependencias.</p>
+        <img src="../../../resources/gradle/Gradle_tarea_depenciasEnlib.png">
+        <textarea>
+            tasks.register<Jar>("createJarWithDependenciesManifest") {
+                duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+                manifest {
+                    attributes(
+                        "Main-Class" to "com.practicas.Main",
+                        "Class-Path" to configurations.runtimeClasspath.get().joinToString(" ") { "lib/${it.name}" }
+                    )
+                }
+                from(sourceSets.main.get().output)
+                dependsOn(configurations.runtimeClasspath)
+            }
+
+            tasks.register<Copy>("copyDependencies") {
+                from(configurations.runtimeClasspath).into(project.layout.buildDirectory.dir("libs/lib"))
+            }
+
+            tasks.named("build") {
+                dependsOn("createJarWithDependenciesManifest", "copyDependencies")
+            }
+        </textarea>
+
+        <h2 id="arbolProyectoGradle">Arbol proyecto Gradle 'Tareas'.</h2>
+        <p>Las tareas registradas quedan almacenas en el directorio other, para el caso anterior se puede ejecutar desde el build ya que se agregó la dependencia de ejecución a la tarea build en cada una.</p>
+        <img src="../../../resources/gradle/Gradle_arbol_proyecto.png">
 
     </section>
 </body>

@@ -33,6 +33,9 @@ document.write("<div>"+
     "<div id='gradleSubmenu' hidden= 'hidden' onmouseleave='submenuOcultar(event)' >"+
         "<ol>"+
             "<li><a href=\'../gradle/gradle.html#archivoBuild\'>Archivo gradle.build.kts</a></li>"+
+            "<li><a href=\'../gradle/gradle.html#tareaFatJar\'>Crear fat jar con las depencias.</a></li>"+
+             "<li><a href=\'../gradle/gradle.html#tareaInternalJarDependencies\'>Crear jar con depencias en lib</a></li>"+
+             "<li><a href=\'../gradle/gradle.html#arbolProyectoGradle\'>Arbol proyecto Gradle 'Tareas'</a></li>"+
         "</ol>"+
     "</div>"
 );
