@@ -1,5 +1,7 @@
 @charset  "utf-8";
 
+
+
 textarea {
     border: 2px solid black;
     border-radius: 10px;
@@ -10,20 +12,9 @@ textarea {
 
 body {
     background-color: black;
-    height: 100%;
-    width: 1500px;
-}
-aside {
-    float: left;
-    height: 4600px;
-    width: 230px;
-    background-color: gray;
-    padding-right: 20px;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-aside a {
-    color: black;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 section {
@@ -64,10 +55,13 @@ h3 {
 
 p{
     font-size: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 li {
     margin-bottom: 15px;
+    color: aliceblue;
 }
 
 nav {
@@ -87,8 +81,12 @@ nav a {
     color: red;
 }
 
-a:link, a:visited, a:active {
-    text-decoration:none;
+a {
+    color: white; /* Color del enlace normal */
+}
+
+a:hover {
+    color: red; /* Color cuando el ratón está sobre el enlace */
 }
 
 footer{
