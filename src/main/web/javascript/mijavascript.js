@@ -3,31 +3,32 @@ function showHeaderView (e) {
    var elementos = document.getElementsByTagName ("a")
    var href = "";
    var targetElement = "";
-   console.log(e.srcElement.type)
    if (!(e.srcElement.type=="textarea")){
-       console.log("entro al area")
        document.getElementById("header").scrollIntoView();
     }
 }
 
 //Oculata submenú cliente.
 function submenuMostrar (e){
-    console.log("Mostrando submenu.")
-    var submenu = document.getElementById(e.fromElement.id+"Submenu");
-    if(submenu.hidden == true){
-        submenu.hidden = false;
 
-        //menu.style.backgroundColor="#0000";
-        //menu.style.color="red";
+    var allMenu = document.getElementsByTagName("button");
+    for (var i=0; i<allMenu.length ; i++){
+        allMenu.item(i).style.color = "white";
+        document.getElementById(allMenu.item(i).id+"Submenu").hidden=true;
     }
+
+    var menu = document.getElementById(e.srcElement.id)
+    var submenu =document.getElementById(e.srcElement.id+"Submenu");
+    if(submenu.hidden == true){
+        submenu.hidden = false;;
+        menu.style.color="red";
+    }
+    llsubmenus = document.getElementById("allsubmenus").hidden=false;
 }
 
-function  submenuOcultar (e){
-    var submenu = e.fromElement;
-    if(submenu.hidden == false){
-        submenu.hidden = true;
-        //menu.style.backgroundColor="#0000";
-        //menu.style.color="red";
+function  submenuOcultar (){
+    var allsubmenus = document.getElementById("allsubmenus");
+    if(allsubmenus.hidden == false){
+        allsubmenus.hidden = true;
         }
-
 }

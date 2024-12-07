@@ -1,6 +1,9 @@
 @charset  "utf-8";
 
-
+#allsubmenus{
+    min-height: 70px;
+    column-count: 5;
+}
 
 textarea {
     border: 2px solid black;
