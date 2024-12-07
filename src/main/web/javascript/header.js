@@ -18,7 +18,7 @@ document.write("<div>"+
     "<a href=\"#\" ><button id='git' onclick='submenuMostrar(event)'>GIT</button></a>"+
   "</nav>"+
 "</div>"
-+"<div id='allsubmenus' onmouseleave='submenuOcultar(event)' >"+
++"<div id='allsubmenus' onmouseleave='submenuOcultar(event)' hidden='true'>"+
     "<div id='javaSubmenu' hidden= 'hidden'  >"+
         "<ol>"+
             "<li><a href=\"../java/java.html#conceptosBasicos\">Conceptos Básicos.</a></li>"+
