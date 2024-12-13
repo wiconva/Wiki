@@ -1,18 +1,22 @@
 @charset  "utf-8";
 
-
+#allsubmenus{
+    min-height: 100px;
+    column-count: 5;
+    font-size: 25px;
+}
 
 textarea {
     border: 2px solid black;
     border-radius: 10px;
     height: 300px;
     width: 900px;
-    margin: 0px 17% 60px;
+    margin: 0px 20% 60px;
 }
 
 body {
     background-color: black;
-    width: 100%;
+    width: 140%;
     margin: 0;
     box-sizing: border-box;
 }
@@ -28,8 +32,8 @@ section {
 img {
     border: 2px solid black;
     border-radius: 10px;
-    height: 400px;
-    width: 900px;
+    height: 500px;
+    width: 1000px;
     margin: 0px 17% 60px;
 }
 
@@ -40,7 +44,8 @@ h2 {
     background-color: black;
     color: white;
     width: 1100px;
-    margin-left: 10%;
+    margin-left: 15%;
+    font-size: 30px;
 }
 
 h3 {
@@ -67,22 +72,23 @@ li {
 nav {
     background-color: green;
     text-align: left;
-    padding: 20px;
+    padding: 50px;
     border: 2px solid black;
     border-radius: 10px;
     margin-bottom: 5px;
 }
 nav a {
-    margin: 10px;
+    margin: 5px;
     background-color: black;
     border: 1px solid white;
-    padding: 15px;
+    padding: 25px;
     border-radius: 10px;
     color: red;
 }
 a button{
     background-color: black;
     color:white;
+    font-size: 25px;
 }
 
 a {
@@ -95,4 +101,8 @@ a:hover {
 
 footer{
     clear: left;
+}
+
+button{
+
 }
