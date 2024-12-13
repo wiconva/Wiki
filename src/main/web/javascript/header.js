@@ -41,7 +41,7 @@ document.write("<div>"+
     "</div>"+
     "<div id='gitSubmenu' hidden= 'hidden' onmouseleave='submenuOcultar(event)' >"+
         "<ol>"+
-            "<li><a href=\'../git/git.html#compararCambioEnSeleccion\'>Archivo gradle.build.kts</a></li>"+
+            "<li><a href=\'../git/git.html#compararCambioEnSeleccion\'>Comparar una sección de código.</a></li>"+
         "</ol>"+
     "</div>"
 );
