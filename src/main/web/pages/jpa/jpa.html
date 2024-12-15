@@ -75,6 +75,10 @@
         <p>Para crear una entidad basta con crear una clase de tipo bean ('Clase sin lógica') con sus setter y getter, agregar un constructor vacío y las anotaciones correpondiente a Entity, table, column, id.</p>
         <img src="../../../resources/jpa/JPA_clase_bean_crear_entidad.png">
 
+        <h2 id="indiceAutoIncrementado">Indice auto-incrementado.</h2>
+        <p>Para incrementar utilizar el auto-incremento y que sea Jpa quien gestione el mismo, basta con agregar la etiqueta @GeneratedValue mas la estratégia a utilizar.</p>
+        <img src="../../../resources/jpa/JPA_id_auto_generado.png">
+
         <h2 id="persistencia">Persistiendo, mergeando y encontrado entidades.</h2>
         <p>Para persistir entidades se utiliza el método persist, que no devuelve nada. Para actualizar información se busca primero por el Id de la entidad con el método find que devuelve una entidad auto-gestionada de ese objeto y cualquier cambio que se realice en el objeto se refleja en la entidad y en la base de datos. También se puede modificar un objeto, luego mediante el entity manager realizar un merge con la entidad y la DB. Luego de cerrar el entity manager ya se podrá realizar ninguna acción sobre la entidad <br> begin transaction y commit van juntas y asegura que la acción sobre la DB se realice correctamente, si no aplica el rollback automático.</p>
         <img src="../../../resources/jpa/JPA_pesistencia_find_merge.png">

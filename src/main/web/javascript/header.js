@@ -30,6 +30,7 @@ document.write("<div>"+
             "<li><a href=\"../jpa/jpa.html#conceptosBasicos\">Conceptos Básicos.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#configuracion\">Configuración y depencias.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#crearEntidad\">Crear entidad clase Bean.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#indiceAutoIncrementado\">Indice auto-incrementado.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#persistencia\">Persistencia, buscar y mergear una entidad.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#remover\">Remover una entidad.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#oneToOne\">Relación uno a uno.</a></li>"+
