@@ -80,12 +80,16 @@
         <img src="../../../resources/jpa/JPA_id_auto_generado.png">
 
         <h2 id="persistencia">Persistiendo, mergeando y encontrado entidades.</h2>
-        <p>Para persistir entidades se utiliza el método persist, que no devuelve nada. Para actualizar información se busca primero por el Id de la entidad con el método find que devuelve una entidad auto-gestionada de ese objeto y cualquier cambio que se realice en el objeto se refleja en la entidad y en la base de datos. También se puede modificar un objeto, luego mediante el entity manager realizar un merge con la entidad y la DB. Luego de cerrar el entity manager ya se podrá realizar ninguna acción sobre la entidad <br> begin transaction y commit van juntas y asegura que la acción sobre la DB se realice correctamente, si no aplica el rollback automático.</p>
+        <p>Para persistir entidades se utiliza el método persist, que no devuelve nada. Para actualizar 'update' información se busca primero por el Id de la entidad con el método find que devuelve una entidad auto-gestionada de ese objeto y cualquier cambio que se realice en el objeto se refleja en la entidad y en la base de datos. También se puede modificar un objeto  'detached', no esta en el constexto de entity', luego mediante el entity manager realizar un merge con la entidad y la DB. Luego de cerrar el entity manager ya se podrá realizar ninguna acción sobre la entidad <br> begin transaction y commit van juntas y asegura que la acción sobre la DB se realice correctamente, si no aplica el rollback automático.</p>
         <img src="../../../resources/jpa/JPA_pesistencia_find_merge.png">
 
         <h2 id="remover">Remover entidades.</h2>
         <p>Para remover una entidad basta con utilizar el metodo remove y pasar la entidad a eliminar. Tener encuenta que la entidad debe no puede estar detach, se carga con find o merge.</p>
         <img src="../../../resources/jpa/JPA_remover_entidad.png">
+
+        <h2 id="crearQueryHql">Crear query hql.</h2>
+        <p>Para crear una query se utiliza el entity y se pide create query, en ella se puede parametrizar con ? o directamente con etiquetas ':parametro'. luego se setean los parámetro, se pide una lista con los resultados de las entidades encontradas.</p>
+        <img src="../../../resources/jpa/JPA_crear_query_hql.png">
 
         <h2 id="oneToOne">Relación one to one.</h2>
         <p>Para relacionar una entidad uno a uno, se debe agregar un objeto de la entidad relacionada en la entidad dueña con la anotación oneToOne y luego la anotacióno JoinColumn con el nombre que se dará a la columna que se creará como llave foránea.</p>
