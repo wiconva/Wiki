@@ -35,6 +35,8 @@ document.write("<div>"+
             "<li><a href=\"../jpa/jpa.html#remover\">Remover una entidad.</a></li>"+
              "<li><a href=\"../jpa/jpa.html#crearQueryHql\">Crear query hql.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#oneToOne\">Relación uno a uno.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#criteriaQueryBetween\">Criteria Query Between.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#collectionEnums\">Colecciones y enumeraciones en el Bean.</a></li>"+
         "</ol>"+
     "</div>"+
     "<div id='javaScriptSubmenu' hidden= 'hidden'  >"+
