@@ -91,6 +91,10 @@
         <p>Para crear una query se utiliza el entity y se pide create query, en ella se puede parametrizar con ? o directamente con etiquetas ':parametro'. luego se setean los parámetro, se pide una lista con los resultados de las entidades encontradas.</p>
         <img src="../../../resources/jpa/JPA_crear_query_hql.png">
 
+        <h2 id="collectionEnums">Colecciones y enumeraciones en los Beans</h2>
+        <p>Las collections agregan una tabla automaticamente con la foreing key correspondiente, y las enumeraciones agregar una nueva columna en la tabla que representa el Bean.</p>
+        <img src="../../../resources/jpa/JPA_collections_enums.png">
+
         <h2 id="oneToOne">Relación one to one.</h2>
         <p>Para relacionar una entidad uno a uno, se debe agregar un objeto de la entidad relacionada en la entidad dueña con la anotación oneToOne y luego la anotacióno JoinColumn con el nombre que se dará a la columna que se creará como llave foránea.</p>
         <img src="../../../resources/jpa/JPA_relacion_one_to_one_1.png">
@@ -98,14 +102,21 @@
         <img src="../../../resources/jpa/JPA_relacion_one_to_one.png">
         <p>La segunda es utilizando la estrategia de cascada que logra persistir auotomaticamente los datos, para esto se debe agregar al anotación one to one el atributo cacade={} .</p>
         <img src="../../../resources/jpa/JPA_relacion_one_to_one_2.png">
+        <p>Con Join table se crea una tabla nueva que guarda la relación, se debe especificar con join columns cuales son las columnas a relacionar de cada entidad, primero la entidad dueña y luego la otra.</p>
+        <img src="../../../resources/jpa/JPA_relacion_one_to_one_new_table.png">
+
+        <h2 id="oneToMany">Relación one to many.</h2>
+        <p>Esta relación crea una tabla si no existe donde se guardan las fk con los apuntamientos, una buena practica es conservar el ajuste LAZZY y crear un método para acceder a los campos de tipo colección que se encuentran relacionados, esto por rendimiento.</p>
+        <img src="../../../resources/jpa/JPA_relacion_one_to_many.png">
+
+        <h2 id="manyToMany">Relación muchos a muchos bidereccional.</h2>
+        <p>Permite crear relaciones muchos a muchos, crea una tabla si no existe y en ella guarda la relación entre las entidades. si se requiere cambiar los nombre se utilizan las etiqueta opcionales, siempre en la clase dueña de la relación.</p>
+        <img src="../../../resources/jpa/JPA_relacion_many_to_many.png">
 
         <h2 id="criteriaQueryBetween">Crear criteria query between.</h2>
         <p>Los criteria se utilizan para abstraer un poco mas el código y no usar sentencias sql, nada más código java.</p>
         <img src="../../../resources/jpa/JPA_criteria_query_between.png">
 
-        <h2 id="collectionEnums">Colecciones y enumeraciones en los Beans</h2>
-        <p>Las collections agregan una tabla automaticamente con la foreing key correspondiente, y las enumeraciones agregar una nueva columna en la tabla que representa el Bean.</p>
-        <img src="../../../resources/jpa/JPA_collections_enums.png">
 
     </section>
 </body>

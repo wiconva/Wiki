@@ -34,9 +34,13 @@ document.write("<div>"+
             "<li><a href=\"../jpa/jpa.html#persistencia\">Persistencia, buscar y mergear una entidad.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#remover\">Remover una entidad.</a></li>"+
              "<li><a href=\"../jpa/jpa.html#crearQueryHql\">Crear query hql.</a></li>"+
-            "<li><a href=\"../jpa/jpa.html#oneToOne\">Relación uno a uno.</a></li>"+
-            "<li><a href=\"../jpa/jpa.html#criteriaQueryBetween\">Criteria Query Between.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#collectionEnums\">Colecciones y enumeraciones en el Bean.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#oneToOne\">Relación uno a uno.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#oneToMany\">Relación uno a muchos.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#manyToMany\">Relación muchos a muchos bidereccional.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#criteriaQueryBetween\">Criteria Query Between.</a></li>"+
+
+
         "</ol>"+
     "</div>"+
     "<div id='javaScriptSubmenu' hidden= 'hidden'  >"+
