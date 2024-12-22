@@ -90,6 +90,16 @@
         <h2 id="crearQueryHql">Crear query hql.</h2>
         <p>Para crear una query se utiliza el entity y se pide create query, en ella se puede parametrizar con ? o directamente con etiquetas ':parametro'. luego se setean los parámetro, se pide una lista con los resultados de las entidades encontradas.</p>
         <img src="../../../resources/jpa/JPA_crear_query_hql.png">
+        <p>Se puede extraer columnas especificas sin mapear la respuesta a una clase bean, teniendo encuenta se recibe un array de objetos con las columnas de lo solicitado en la query, luego, se debe mapear al tipo requerido.</p>
+        <img src="../../../resources/jpa/JPA_crear_query_hql_direccionada.png">
+
+        <h2 id="crearQueryHqlNombrada">Crear query hql nombrada.</h2>
+        <p>Permite agregar querys que pueden ser usadas desde distintos puntos del código sin repetir las mismas.</p>
+        <img src="../../../resources/jpa/JPA_crear_query_hql_nombrada.png">
+
+        <h2 id="crearQueryNativa">Crear query nativa.</h2>
+        <p>Las querys nativas permiten recuperar información direccionada, columnas en específico sin recuperar todos los campos de la tabla. Para esto normamente se mapean a Clases Dto desde el listado de arrays de objtos que se reciben a ejecutar la query</p>
+        <img src="../../../resources/jpa/JPA_crear_query_nativa.png">
 
         <h2 id="collectionEnums">Colecciones y enumeraciones en los Beans</h2>
         <p>Las collections agregan una tabla automaticamente con la foreing key correspondiente, y las enumeraciones agregar una nueva columna en la tabla que representa el Bean.</p>

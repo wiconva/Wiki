@@ -33,7 +33,9 @@ document.write("<div>"+
             "<li><a href=\"../jpa/jpa.html#indiceAutoIncrementado\">Indice auto-incrementado.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#persistencia\">Persistencia, buscar y mergear una entidad.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#remover\">Remover una entidad.</a></li>"+
-             "<li><a href=\"../jpa/jpa.html#crearQueryHql\">Crear query hql.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#crearQueryHql\">Crear query hql.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#crearQueryHqlNombrada\">Crear query hql nombrada.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#crearQueryNativa\">Crear query nativa.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#collectionEnums\">Colecciones y enumeraciones en el Bean.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#oneToOne\">Relación uno a uno.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#oneToMany\">Relación uno a muchos.</a></li>"+
