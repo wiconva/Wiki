@@ -22,7 +22,7 @@
         <img src="../../../resources/jpa/JPA_basics_4.png">
 
 
-        <h2 id="configuracion">Configuración</h2>
+        <h2 id="configuracion">Configuración JPA</h2>
         <p>Ya que JPA solo es la interface que ofrece java para trabajar persistencia con base de datos, es necesario tener
         un proveedor de persistencia como HIBERNET,  para ello descargamos la depencia de hibernet-core y el jdbc connector
         para que hibernet pueda gestionar la conexión con base de datos</p>
@@ -69,6 +69,32 @@
                     </properties>
                 </persistence-unit>
             </persistence>
+        </textarea>
+
+        <h2 id="configuracionHibernate">Configuración Hibernate.</h2>
+        <p>Para usar puntualmente Hibernate se debe crear un archivo 'hibernate.cfg.xml' y alojarlo en la raíz de la carpeta resource. Hibernate trabaja con sesiones que son similares al trabajo con el entity manager de JPA.</p>
+        <img src="../../../resources/jpa/JPA_configuraciones_hibernate.png">
+        <textarea >
+                        <?xml version="1.0" encoding="UTF-8"?>
+            <!DOCTYPE hibernate-configuration PUBLIC
+                    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                    "https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+            <hibernate-configuration>
+                <session-factory>
+                    <!-- Database connection properties - Driver, URL, user, password -->
+                    <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+                    <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;database=MyBase;encrypt=false</property>
+                    <property name="hibernate.connection.username">admin</property>
+                    <property name="hibernate.connection.password">admin</property>
+
+                    <property name="hibernate.dialect">org.hibernate.dialect.SQLServer2016Dialect</property>
+                    <property name="hibernate.show_sql">true</property>
+                    <property name="hibernate.format_sql">false</property>
+                    <property name="hibernate.hbm2ddl.auto">create-drop</property>
+
+                    <mapping class="com.practice.persistence.bean.ComputadorBean"></mapping>
+                </session-factory>
+            </hibernate-configuration>
         </textarea>
 
         <h2 id="crearEntidad">Crear entidad y clase bean.</h2>
@@ -126,6 +152,18 @@
         <h2 id="criteriaQueryBetween">Crear criteria query between.</h2>
         <p>Los criteria se utilizan para abstraer un poco mas el código y no usar sentencias sql, nada más código java.</p>
         <img src="../../../resources/jpa/JPA_criteria_query_between.png">
+
+        <h2 id="eventosPrePost">Eventos pre y post entidad.</h2>
+        <p>Existen eventos que se pueden utilizar de tipo pre y post a las diferentes acciones sobre la base de datos mediante el entity.</p>
+        <img src="../../../resources/jpa/JPA_eventos_pre_post.png">
+
+        <h2 id="eventosAuditEnvers">Eventos audit-envers.</h2>
+        <p>Son auditorias que se puedes setear nivel de clase, audita la clase con cada una de sus entidades relacionadas, obliga a incluir la etiqueta audited en cada entidad o inicar en la etiqueta que no busque la relación en las otras entidades. El inconveniente es que se crear tablas adicionale para cada una de las entidades a auditar.<br> A nivel de campo solo audita el campo solicitado y la tabla a la que se le aplica, esto reduce la cantidad de tablas que crea la auditoria pero también el nivel de seguimiento.</p>
+        <img src="../../../resources/jpa/JPA_eventos_audit_envers.png">
+
+        <h2 id="eventosInterceptoresHibernate">Eventos interceptores Hibernate.</h2>
+        <p>Son interceptores de eventos en Hibernate, se debe crear una clase que herede de la clase Empty Interceptor, y sobre escribir los métodos que se quieran usar, estos método se obtienen por herencia.</p>
+        <img src="../../../resources/jpa/JPA_eventos_interceptor_hibernate.png">
 
 
     </section>

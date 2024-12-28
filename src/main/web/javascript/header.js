@@ -28,7 +28,8 @@ document.write("<div>"+
     "<div id='jpaSubmenu' hidden= 'hidden'  >"+
         "<ol>"+
             "<li><a href=\"../jpa/jpa.html#conceptosBasicos\">Conceptos Básicos.</a></li>"+
-            "<li><a href=\"../jpa/jpa.html#configuracion\">Configuración y depencias.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#configuracion\">Configuración JPA y depencias.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#configuracionHibernate\">Configuración Hibernate.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#crearEntidad\">Crear entidad clase Bean.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#indiceAutoIncrementado\">Indice auto-incrementado.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#persistencia\">Persistencia, buscar y mergear una entidad.</a></li>"+
@@ -41,6 +42,9 @@ document.write("<div>"+
             "<li><a href=\"../jpa/jpa.html#oneToMany\">Relación uno a muchos.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#manyToMany\">Relación muchos a muchos bidereccional.</a></li>"+
             "<li><a href=\"../jpa/jpa.html#criteriaQueryBetween\">Criteria Query Between.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#eventosPrePost\">Eventos pre y post entidad.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#eventosAuditEnvers\">Eventos audit-envers.</a></li>"+
+            "<li><a href=\"../jpa/jpa.html#eventosInterceptoresHibernate\">Eventos interceptores Hibernate.</a></li>"+
 
 
         "</ol>"+
