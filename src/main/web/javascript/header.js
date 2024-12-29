@@ -25,6 +25,9 @@ document.write("<div>"+
         "<ol>"+
             "<li><a href=\"../java/java.html#comentarios\">Tipos de comentarios.</a></li>"+
             "<li><a href=\"../java/java.html#tiposDatos\">Tipos de datos.</a></li>"+
+            "<li><a href=\"../java/java.html#operadores\">Operadores.</a></li>"+
+            "<li><a href=\"../java/java.html#claseMath\">Clase Math.</a></li>"+
+            "<li><a href=\"../java/java.html#claseString\">Clase String.</a></li>"+
 
         "</ol>"+
     "</div>"+
