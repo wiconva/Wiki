@@ -22,7 +22,9 @@ document.write("<div>"+
 +"<div id='allsubmenus'  hidden='true'>"+
     "<div id='javaSubmenu' hidden= 'hidden'  >"+
         "<ol>"+
-            "<li><a href=\"#\">TO_DO</a></li>"+
+            "<li><a href=\"../java/java.html#comentarios\">Tipos de comentarios.</a></li>"+
+            "<li><a href=\"../java/java.html#tiposDatos\">Tipos de datos.</a></li>"+
+
         "</ol>"+
     "</div>"+
     "<div id='jpaSubmenu' hidden= 'hidden'  >"+
