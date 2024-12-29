@@ -2,7 +2,7 @@
 
 #allsubmenus{
     min-height: 100px;
-    column-count: 5;
+    column-count: 3;
     font-size: 25px;
 }
 
@@ -59,7 +59,7 @@ h3 {
 }
 
 p{
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 3%;
     margin-right: 3%;
 }

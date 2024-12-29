@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="Esp">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring</title>
+    <link rel="stylesheet" href="../../css/styles-sheets.css">
+    <script src="../../javascript/mijavascript.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <script src="../../javascript/header.js"></script>
+    </header>
+
+    <section id="section" onclick="showHeaderView(event)">
+
+        <h2 id="sfwDependencias">SpringFW dependencias.</h2>
+        <p>Spirng es un conjunto de tecnología que facilita el desarrollo y minimiza las configuraciones y creación de elementos para concentrar los esfuerzos del desarrollo en la lógica de negocio. La base de todas la tecnologías Spring es Spring Framework, Spring Data es para gestionar la conexión a BD, Spring boot es la implementación mas avanzada, se van agregando las tecnológias que se requieran en función de la necesidades del proyecto.<br>Toda la información y documenación se encuentra en la página oficial 'spring.io' y las dependencia se encuentran bajo el dominio 'org.spring'</p>
+        <textarea>
+            <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>6.2.1</version>
+            </dependency>
+        </textarea>
+
+        <h2 id="sfwContextoClasico">SpringFW contexto clásico.</h2>
+        <p>El contexto clásico permite crear beans, se debe agregar cada bean manualmente, junto con la definición de parámetros de cada constructor, por defecto se crean de tipo singleton, lo que  significa que cada vez que se pida un objeto al contexto devolverá el mismo. Esto ayuda en la optimización de recursos y se usa en escenarios donde no es necesario crear en repetidas ocaciones objetos diferentes. Utilizado en controladores, servicios ...</p>
+        <img src="../../../resources/spring/SPRING_archivos_contexto.png">
+        <textarea>
+            <?xml version="1.0" encoding="UTF-8"?>
+            <beans xmlns="http://www.springframework.org/schema/beans"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+                <bean id="empleado" class="com.practice.beans.EmployeeBean" scope="singleton" >
+                    <constructor-arg name="nombre" value="Michael"/>
+                    <constructor-arg name="cargoBean" ref="cargo"/>
+                </bean>
+                <bean id="cargo" class="com.practice.beans.CargoBean">
+                    <constructor-arg name="id" value="1"></constructor-arg>
+                    <constructor-arg name="descricion" value="Ingeniero"></constructor-arg>
+                </bean>
+            </beans>
+        </textarea>
+
+
+    </section>
+</body>
+    <footer>
+        Fin de la página.
+    </footer>
+</html>

@@ -13,17 +13,25 @@
 document.write("<div>"+
 " <nav>"+
     "<a href=\"#\" ><button id='java' onclick='submenuMostrar(event)'>JAVA</button></a>"+
+    "<a href=\"#\" ><button id='spring' onclick='submenuMostrar(event)'>SPRING</button></a>"+
     "<a href=\"#\" ><button id='jpa' onclick='submenuMostrar(event)'>JPA</button></a>"+
     "<a href=\"#\" ><button id='javaScript' onclick='submenuMostrar(event)'>JAVA SCRIPT</button></a>"+
     "<a href=\"#\" ><button id='gradle' onclick='submenuMostrar(event)'>GRADLE</button></a>"+
     "<a href=\"#\" ><button id='git' onclick='submenuMostrar(event)'>GIT</button></a>"+
   "</nav>"+
 "</div>"
-+"<div id='allsubmenus'  hidden='true'>"+
++"<div id='allsubmenus'>"+
     "<div id='javaSubmenu' hidden= 'hidden'  >"+
         "<ol>"+
             "<li><a href=\"../java/java.html#comentarios\">Tipos de comentarios.</a></li>"+
             "<li><a href=\"../java/java.html#tiposDatos\">Tipos de datos.</a></li>"+
+
+        "</ol>"+
+    "</div>"+
+    "<div id='springSubmenu' hidden= 'hidden'  >"+
+        "<ol>"+
+            "<li><a href=\"../spring/spring.html#sfwDependencias\">SpringFW dependencias.</a></li>"+
+            "<li><a href=\"../spring/spring.html#sfwContextoClasico\">SpringFW contexto clásico.</a></li>"+
 
         "</ol>"+
     "</div>"+

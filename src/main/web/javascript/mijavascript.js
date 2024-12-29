@@ -1,8 +1,5 @@
 //Regresa a la barra de contenido cuando se da click en los títulos.
 function showHeaderView (e) {
-   var elementos = document.getElementsByTagName ("a")
-   var href = "";
-   var targetElement = "";
    if (!(e.srcElement.type=="textarea")){
        document.getElementById("header").scrollIntoView();
     }
@@ -23,7 +20,6 @@ function submenuMostrar (e){
         submenu.hidden = false;;
         menu.style.color="red";
     }
-    llsubmenus = document.getElementById("allsubmenus").hidden=false;
 }
 
 function  submenuOcultar (){
