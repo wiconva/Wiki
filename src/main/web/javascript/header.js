@@ -28,6 +28,14 @@ document.write("<div>"+
             "<li><a href=\"../java/java.html#operadores\">Operadores.</a></li>"+
             "<li><a href=\"../java/java.html#claseMath\">Clase Math.</a></li>"+
             "<li><a href=\"../java/java.html#claseString\">Clase String.</a></li>"+
+            "<li><a href=\"../java/java.html#entradaDatos\">Entrada de datos al sistema por consola.</a></li>"+
+            "<li><a href=\"../java/java.html#entradaDatosJOptionPane\">Entrada de datos al sistema por JOptionPane.</a></li>"+
+            "<li><a href=\"../java/java.html#condicionalIf\">Condicional IF, else if, else.</a></li>"+
+            "<li><a href=\"../java/java.html#condicionalSwitch\">Condicional Switch.</a></li>"+
+            "<li><a href=\"../java/java.html#bucleWhile\">Bucle while.</a></li>"+
+            "<li><a href=\"../java/java.html#bucleFor\">Bucle For.</a></li>"+
+            "<li><a href=\"../java/java.html#array\">Arrays.</a></li>"+
+
 
         "</ol>"+
     "</div>"+
