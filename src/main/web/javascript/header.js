@@ -35,6 +35,8 @@ document.write("<div>"+
             "<li><a href=\"../java/java.html#bucleWhile\">Bucle while.</a></li>"+
             "<li><a href=\"../java/java.html#bucleFor\">Bucle For.</a></li>"+
             "<li><a href=\"../java/java.html#array\">Arrays.</a></li>"+
+            "<li><a href=\"../java/java.html#finalStatic\">Modificador final y static.</a></li>"+
+            "<li><a href=\"../java/java.html#sobreCargaConstructores\">Sobre carga de métodos y constructores.</a></li>"+
 
 
         "</ol>"+
